@@ -25,7 +25,7 @@
 #    and best practices on handling the access key credentials.
 
 name: Deploy to Amazon ECS
-runs-on: self-hosted
+
 on:
   push:
     branches:
@@ -42,6 +42,7 @@ env:
                                                # containerDefinitions section of your task definition
 
 jobs:
+  runs-on: self-hosted
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
