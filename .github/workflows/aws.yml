@@ -45,7 +45,6 @@ jobs:
   deploy:
     runs-on: self-hosted
     name: Deploy
-    runs-on: ubuntu-latest
     environment: production
 
     steps:
